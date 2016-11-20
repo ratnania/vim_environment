@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/home/ratnani/Projects/femiga/branches/0.9.1/src'
 let g:netrw_dirhist_2='/home/ratnani/Projects/femiga/src'
 let g:netrw_dirhist_3='/home/ratnani/Projects/femiga/src/pppack'
@@ -7,3 +7,5 @@ let g:netrw_dirhist_4='/home/ratnani/.vim/bundle/ctrlp.vim'
 let g:netrw_dirhist_5='/home/ratnani/Projects/pymurge/tests/data'
 let g:netrw_dirhist_6='/home/ratnani/Projects/femiga/branches/0.9.2/src/fem/src/python'
 let g:netrw_dirhist_7='/home/ratnani/Projects/femiga/branches/0.9.2/src/fit/tests/python/square.zip'
+let g:netrw_dirhist_8='/home/macahr/projects/comics/spiga/fortran/src/parameters'
+let g:netrw_dirhist_9='/home/macahr/projects/comics/spiga/fortran/src'

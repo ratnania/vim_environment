@@ -13,6 +13,11 @@ filetype indent on
 filetype plugin on
 filetype plugin indent on
 
+" indentation for fortran
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+
 " Set to auto read when a file is changed from the outside
 set autoread
 
@@ -31,6 +36,8 @@ nmap <leader>w :w!<cr>
 " disable swap files
 set noswapfile
 
+" haskell - comments
+map ,- :s/^/-- /<CR>
 " fotran - comments
 map ,! :s/^/!/<CR>
 " python - comments
@@ -44,9 +51,9 @@ map ,. :s/^/.. /<CR>
 " cancel comment
 map ,c :s/^\/\/\\|^--\\|^> \\|^[#"%!;.]//<CR>
 " + blabla
-map ,+ :s/^/+ /<CR>
+" map ,+ :s/^/+ /<CR>
 " - blabla
-map ,- :s/^/+ /<CR>
+" map ,- :s/^/+ /<CR>
 
 " using pathogen
 call pathogen#runtime_append_all_bundles()
@@ -59,13 +66,16 @@ call pathogen#runtime_append_all_bundles()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " colorscheme darkZ
 " colorscheme desert
+" colorscheme dejavu
 " colorscheme autumnleaf 
 " colorscheme autumn
-set guifont=Monospace\ 8 
+colorscheme solarized
 
 set background=dark
-colorscheme solarized
+" set background=light
 " enable syntax hyghlighting
+
+set guifont=Monospace\ 9 
 syntax on
 
 " auto split line when len > 130
@@ -99,6 +109,9 @@ vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 " Treat long lines as break lines (useful when moving around in them)
 map j gj
 map k gk
+
+" map Del to Escape
+imap <del> <esc>
 
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
 map <space> /
@@ -220,7 +233,14 @@ let g:ctrlp_map = '<c-p>'
 " => Enable OmniComppletion
 "filetype plugin on
 "set omnifunc=synthaxcomplete#Complete
-autocmd FileType python set omnifunc=pythoncomplete#Complete
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+" autocmd FileType python set omnifunc=pythoncomplete#Complete
+" autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+" autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+" autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+"
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+silent !stty -ixon > /dev/null 2>/dev/null

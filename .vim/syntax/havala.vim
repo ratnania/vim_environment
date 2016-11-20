@@ -1,0 +1,1 @@
+/home/macahr/projects/havala/plugin/vim/syntax/havala.vim
