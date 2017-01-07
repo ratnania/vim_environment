@@ -71,9 +71,12 @@ call pathogen#runtime_append_all_bundles()
 " colorscheme autumn
 colorscheme solarized
 
-set background=dark
-" set background=light
+" set background=dark
+set background=light
 " enable syntax hyghlighting
+
+" Use the 16 colors terminal option to get VIM to look like GVIM with solarized colors. 
+set t_Co=16
 
 set guifont=Monospace\ 9 
 syntax on
