@@ -56,8 +56,8 @@ map ,c :s/^\/\/\\|^--\\|^> \\|^[#"%!;.]//<CR>
 " map ,- :s/^/+ /<CR>
 
 " using pathogen
-call pathogen#runtime_append_all_bundles()
-" call pathogen#infect()
+" call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 " call pathogen#helptags()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -71,11 +71,11 @@ call pathogen#runtime_append_all_bundles()
 " colorscheme autumn
 colorscheme solarized
 
-set background=dark
-" set background=light
+" set background=dark
+set background=light
 " enable syntax hyghlighting
 
-set guifont=Monospace\ 9 
+set guifont=Monospace\ 11 
 syntax on
 
 " auto split line when len > 130
@@ -239,6 +239,10 @@ let g:ctrlp_map = '<c-p>'
 " autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 "
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 
