@@ -76,6 +76,9 @@ set background=light
 " enable syntax hyghlighting
 
 set guifont=Monospace\ 11 
+" Use the 16 colors terminal option to get VIM to look like GVIM with solarized colors. 
+set t_Co=16
+
 syntax on
 
 " auto split line when len > 130
