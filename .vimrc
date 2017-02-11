@@ -115,6 +115,7 @@ map k gk
 
 " map Del to Escape
 imap <del> <esc>
+imap <M-q> <esc>
 
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
 map <space> /
