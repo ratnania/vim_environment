@@ -71,8 +71,8 @@ call pathogen#infect()
 " colorscheme autumn
 colorscheme solarized
 
-" set background=dark
-set background=light
+set background=dark
+" set background=light
 " enable syntax hyghlighting
 
 set guifont=Monospace\ 11 
@@ -247,6 +247,8 @@ let g:ctrlp_map = '<c-p>'
 " 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" ANTLR files
+au BufRead,BufNewFile *.g4 set filetype=antlr4
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
