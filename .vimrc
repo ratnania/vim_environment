@@ -71,8 +71,8 @@ call pathogen#infect()
 " colorscheme autumn
 colorscheme solarized
 
-" set background=dark
-set background=light
+set background=dark
+" set background=light
 " enable syntax hyghlighting
 
 set guifont=Monospace\ 11 
