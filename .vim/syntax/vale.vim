@@ -7,11 +7,9 @@ if exists("b:current_syntax")
   finish
 endif
 
-syn keyword valeLanguageKeywords Space TrialFunction TestFunction 
-syn keyword valeLanguageKeywords Equation Domain 
+syn keyword valeLanguageKeywords Mapping Domain Space Field Function 
 syn keyword valeLanguageKeywords Integer Real Complex 
-syn keyword valeLanguageKeywords Field 
-syn keyword valeLanguageStmts    kind dim domain space end function return 
+syn keyword valeLanguageStmts    kind dim domain mapping space 
 
 hi def link valeLanguageKeywords    Todo
 hi def link valeLanguageKeywords    Comment
@@ -43,5 +41,15 @@ syntax match potionOperator "\vdiv"
 syntax match potionOperator "\vdx"
 syntax match potionOperator "\vdy"
 syntax match potionOperator "\vdz"
+syntax match potionOperator "\vdxx"
+syntax match potionOperator "\vdyy"
+syntax match potionOperator "\vdzz"
+syntax match potionOperator "\vdxy"
+syntax match potionOperator "\vdyz"
+syntax match potionOperator "\vdxz"
+syntax match potionOperator "\vcross"
+syntax match potionOperator "\vinner"
+syntax match potionOperator "\vouter"
+syntax match potionOperator "\vdot"
 
 highlight link potionOperator Operator
